@@ -1,1 +1,1 @@
-# AlphaFold port to the Apple GPU
+# AlphaFold ported to the M1 GPU
