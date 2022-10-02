@@ -1,6 +1,6 @@
 # AlphaFold ported to the M1 GPU
 
-> TODO: Make this overview more concise, emphasize why eager is slower that MLIR
+> TODO: Make this overview more concise, emphasize why MLIR is faster than eager
 
 This will be a port of AlphaFold to Swift using Metal Performance Shaders Graph. Although it has been ported to PyTorch (which uses MPSGraph internally), this version can utilize MPSGraph's MLIR compilation capabilities. That may greatly optimize it compared to a purely eager implementation, especially since the model is time-recurrent and O(n) (based on my current understanding). Furthermore, writing it in Swift provides full access the low-level Metal API. Metal permits more intense optimizations that aren't possible the more user-friendly PyTorch tensors.
 
