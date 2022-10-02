@@ -19,6 +19,13 @@ Remove `--info=progress2` in `download_pdf_mmcif.sh`. Instead, just put `--progr
 
 ```swift
 let graph = MPSGraph()
-// ...
-graph.perform(NSSelectorFromString("dump"))
+let const = graph.constant(23, dataType: .float16)
+graph.perform(NSSelectorFromString("dump")) // prints MLIR
+```
+```mlir
+module  {
+  func @main() {
+    %0 = "mps.constant"() {value = dense<2.300000e+01> : tensor<f16>} : () -> tensor<f16>
+  }
+}
 ```
