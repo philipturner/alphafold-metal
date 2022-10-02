@@ -17,7 +17,7 @@ Download the reduced dataset, which required 600 GB\* of disk space. Download `a
  
 <img width="573" alt="Screen Shot 2022-10-02 at 12 48 13 AM" src="https://user-images.githubusercontent.com/71743241/193465235-db592b58-e599-43ce-90ee-1e2a5a703f89.png">
 
-## Day 1 - October 2
+## Day 1
 
 Remove `--info=progress2` in `download_pdf_mmcif.sh`. Instead, just put `--progress`; macOS uses an older `rsync` version that doesn't incrementally recurse files. The output shows the amount of files left, although it floods the console. Downloaded Xcode 14.1 beta 3 because that has `argSort` and `inverse` functions for MPSGraph - functions that AlphaFold uses. I found a very useful hidden utility for debugging MPSGraphs:
 
