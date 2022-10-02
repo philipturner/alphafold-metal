@@ -13,7 +13,7 @@ Download the reduced dataset, which required 600 GB\* of disk space. Download `a
 
 > \*This comes in several modules of similar sizes. When you need some extra disk space, remove `uniclust30` which consumes ~100 GB. Later, re-run only the script that downloads this dataset. Freeing up this dataset provides the optimal combination of size freed, network download time, and impact on long-term SSD health.
 >
-> If you need ~200 GB freed instead, delete the `pdb_mmcif` dataset. Free only one of (`uniclust30`, `pdf_mmcif`) at a time, unless you need the full 300 GB of disk space. Only free the space you absolutely need, for the sake of your disk's long-term health. For reference, downloading 600 GB on a 1 TB solid-state drive will take off 0.05% of its lifespan. If you have a magnetic HDD, I strongly recommend using that instead of your SSD.
+> If you need ~200 GB freed instead, delete the `pdb_mmcif` dataset. Free only one of (`uniclust30`, `pdf_mmcif`) at a time, unless you need the full 300 GB of disk space. Only free the space you absolutely need, for the sake of your disk's long-term health. For reference, downloading 600 GB on my 1 TB solid-state drive took off 0.05% of its lifespan. If you have a magnetic HDD, I strongly recommend using that instead of your SSD.
  
 <img width="573" alt="Screen Shot 2022-10-02 at 12 48 13 AM" src="https://user-images.githubusercontent.com/71743241/193465235-db592b58-e599-43ce-90ee-1e2a5a703f89.png">
 
