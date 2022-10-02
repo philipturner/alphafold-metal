@@ -47,6 +47,12 @@ Here's my game plan:
 | data.py                   | 19                   |
 | features.py               | 90                   |
 | folding.py                | 995                  |
+| geometry/\_\_init\_\_.py  | 17                   |
+| geometry/rigid_matrix_vector.py | 92             |
+| geometry/rotation_matrix.py | 143                |
+| geometry/struct_of_array.py | 206                |
+| geometry/utils.py         | 9                    |
+| geometry/vector.py        | 203                  |
 | layer_stack.py            | 274                  |
 | lddt.py                   | 88                   |
 | mapping.py                | 209                  |
