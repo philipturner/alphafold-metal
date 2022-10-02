@@ -58,6 +58,7 @@ Here's my game plan:
 | utils.py                  | 119                  |
 
 | File in `alphafold/model/geometry` | Lines of Python Code |
+| ---------------------------------- | -------------------- |
 | \_\_init\_\_.py                    | 17                   |
 | rigid_matrix_vector.py             | 92                   |
 | rotation_matrix.py                 | 143                  |
