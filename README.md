@@ -16,4 +16,4 @@ Download the reduced dataset, which required 600 GB of disk space. Download `ari
  
 <img width="573" alt="Screen Shot 2022-10-02 at 12 48 13 AM" src="https://user-images.githubusercontent.com/71743241/193438359-27b09d85-85bb-450d-aef2-6ec025eee624.png">
 
-Remove `--info=progress2` in `download_pdf_mmcif.sh`. Instead, just put `--progress`; macOS uses an older `rsync` version that doesn't incrementally recurse files. The output shows the amount of files left, but it does flood the console.
+Remove `--info=progress2` in `download_pdf_mmcif.sh`. Instead, just put `--progress`; macOS uses an older `rsync` version that doesn't incrementally recurse files. The output shows the amount of files left, but it does flood the console. Downloaded Xcode 14.1 beta 3 because that has `argSort` and `inverse` functions for MPSGraph - functions that AlphaFold uses.
