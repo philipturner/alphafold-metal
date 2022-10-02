@@ -39,30 +39,20 @@ Here's my game plan:
 4) Translate the code outlined below to Swift, verbatim.
 5) Replace calls into JAX and TensorFlow with MPSGraph.
 
-| File in `alphafold/model` | Lines of Python Code |
-| ------------------------- | -------------------- |
-| all_atom.py               | 1127                 |
-| all_atom_test.py          | 121                  |
-| common_modules.py         | 116                  |
-| config.py                 | 643                  |
-| data.py                   | 19                   |
-| features.py               | 90                   |
-| folding.py                | 995                  |
-| layer_stack.py            | 274                  |
-| layer_stack_test.py       | 321                  |
-| lddt.py                   | 88                   |
-| lddt_test.py              | 65                   |
-| mapping.py                | 209                  |
-| model.py                  | 163                  |
-| modules.py                | 2090                 |
-| prng.py                   | 55                   |
-| prng_test.py              | 32                   |
-| quat_affine.py            | 445                  |
-| quat_affine_test.py       | 136                  |
-| r3.py                     | 306                  |
-| utils.py                  | 119                  |
+| File in `alphafold/model` | Lines to Translate | File in `alphafold/model` | Lines to Translate |
+| ------------------------- | ------------------ | ------------------------- | ------------------ |
+| all_atom.py               | 1127               | lddt_test.py              | 65                 |
+| all_atom_test.py          | 121                | mapping.py                | 209                |
+| common_modules.py         | 116                | model.py                  | 163                |
+| config.py                 | 643                | modules.py                | 2090               |
+| data.py                   | 19                 | prng.py                   | 55                 |
+| features.py               | 90                 | prng_test.py              | 32                 |
+| folding.py                | 995                | quat_affine.py            | 445                |
+| layer_stack.py            | 274                | quat_affine_test.py       | 136                |
+| layer_stack_test.py       | 321                | r3.py                     | 306                |
+| lddt.py                   | 88                 | utils.py                  | 119                |
 
-| File in `alphafold/model/geometry` | Lines of Python Code |
+| File in `~/geometry` | Lines to Translate |
 | ---------------------------------- | -------------------- |
 | \_\_init\_\_.py                    | 17                   |
 | rigid_matrix_vector.py             | 92                   |
@@ -72,7 +62,7 @@ Here's my game plan:
 | utils.py                           | 9                    |
 | vector.py                          | 203                  |
 
-| File in `alphafold/model/tf` | Lines of Python Code |
+| File in `~/tf` | Lines to Translate |
 | ---------------------------- | -------------------- |
 | data_transforms.py           | 611                  |
 | input_pipeline.py            | 152                  |
