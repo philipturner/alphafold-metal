@@ -35,9 +35,10 @@ module  {
 Here's my game plan:
 
 1) Get the Python code working on CPU-only JAX.
-2) Create a Swift package that calls into Python code, then execute the model in SwiftPM tests.
-3) Translate the code outlined below to Swift, verbatim.
-4) Replace calls into JAX and TensorFlow with MPSGraph.
+2) Comment out multimer and tests code; I'll port that another day.
+3) Create a Swift package that calls into Python code, then execute the model in SwiftPM tests.
+4) Translate the code outlined below to Swift, verbatim.
+5) Replace calls into JAX and TensorFlow with MPSGraph.
 
 | File in `alphafold/model` | Lines of Python Code |
 | ------------------------- | -------------------- |
@@ -65,3 +66,13 @@ Here's my game plan:
 | struct_of_array.py                 | 206                  |
 | utils.py                           | 9                    |
 | vector.py                          | 203                  |
+
+| File in `alphafold/model/tf` | Lines of Python Code |
+| ---------------------------- | -------------------- |
+| data_transforms.py           | 611                  |
+| input_pipeline.py            | 152                  |
+| protein_features.py          | 115                  |
+| proteins_dataset.py          | 152                  |
+| shape_helpers.py             | 33                   |
+| shape_placeholders.py        | 6                    |
+| utils.py                     | 33                   |
