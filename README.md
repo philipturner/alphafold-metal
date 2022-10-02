@@ -4,7 +4,7 @@ This fork ports AlphaFold to Swift using Metal Performance Shaders Graph. Althou
 
 The official AlphaFold repository uses JAX, which graph-compiles code with XLA for optimal performance on Nvidia GPUs. Here, I have optimized it for Apple GPUs so that I can use it on my MacBook Pro for nanotechnology research. These intense optimizations could greatly speedup my workflow - searching for proteins that may be used for transistors or memory cells. Such proteins have never been produced in living organisms, but genetically engineered bacteria can mass-produce them for real-world hardware. Since I don't know what the proteins will be, I need to rapidly search a vast solution space, with minimal latency and no restraints like Colab usage limits.
 
-- Goal: Port the entire framework in a single day using PythonKit and MPSGraph, using https://github.com/lucidrains/alphafold2 as a reference.
+- Goal: Port the entire framework in a few days using PythonKit and MPSGraph, using https://github.com/lucidrains/alphafold2 as a reference.
 - Afterward, compare performance to the Colab notebook that uses an Nvidia K80. Prove it runs faster on my M1 Max, then ridiculously optimize it for inference performance.
 
 ## Day 0
@@ -17,7 +17,7 @@ Download the reduced dataset, which required 600 GB\* of disk space. Download `a
  
 <img width="573" alt="Screen Shot 2022-10-02 at 12 48 13 AM" src="https://user-images.githubusercontent.com/71743241/193465235-db592b58-e599-43ce-90ee-1e2a5a703f89.png">
 
-## Day 1
+## Day 1 - October 2
 
 Remove `--info=progress2` in `download_pdf_mmcif.sh`. Instead, just put `--progress`; macOS uses an older `rsync` version that doesn't incrementally recurse files. The output shows the amount of files left, although it floods the console. Downloaded Xcode 14.1 beta 3 because that has `argSort` and `inverse` functions for MPSGraph - functions that AlphaFold uses. I found a very useful hidden utility for debugging MPSGraphs:
 
