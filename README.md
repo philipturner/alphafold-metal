@@ -17,7 +17,7 @@ Download the reduced dataset, which required 600 GB of disk space. Download `ari
 
 ## Day 1
 
-Remove `--info=progress2` in `download_pdf_mmcif.sh`. Instead, just put `--progress`; macOS uses an older `rsync` version that doesn't incrementally recurse files. The output shows the amount of files left, but it does flood the console. Downloaded Xcode 14.1 beta 3 because that has `argSort` and `inverse` functions for MPSGraph - functions that AlphaFold uses. I found a very useful hidden utility for debugging MPSGraphs:
+Remove `--info=progress2` in `download_pdf_mmcif.sh`. Instead, just put `--progress`; macOS uses an older `rsync` version that doesn't incrementally recurse files. The output shows the amount of files left, although it floods the console. Downloaded Xcode 14.1 beta 3 because that has `argSort` and `inverse` functions for MPSGraph - functions that AlphaFold uses. I found a very useful hidden utility for debugging MPSGraphs:
 
 ```swift
 let graph = MPSGraph()
