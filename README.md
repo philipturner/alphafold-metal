@@ -34,8 +34,7 @@ module  {
 
 Here's my game plan:
 
-1) Get the Python code working on CPU-only JAX.
-2) Comment out multimer and tests code; I'll port that another day.
+1) Get the Python code working on CPU-only JAX, comment out multimer code (I'll port that another day).
 3) Create a Swift package that calls into Python code, then execute the model in SwiftPM tests.
 4) Translate the code outlined below to Swift, verbatim.
 5) Replace calls into JAX and TensorFlow with MPSGraph.
@@ -43,23 +42,23 @@ Here's my game plan:
 | File in `alphafold/model` | Lines of Python Code |
 | ------------------------- | -------------------- |
 | all_atom.py               | 1127                 |
-| <s>all_atom_test.py</s>   | <s>121</s>           |
+| all_atom_test.py          | 121                  |
 | common_modules.py         | 116                  |
 | config.py                 | 643                  |
 | data.py                   | 19                   |
 | features.py               | 90                   |
 | folding.py                | 995                  |
 | layer_stack.py            | 274                  |
-| <s>layer_stack_test.py</s> | <s>321</s>          |
+| layer_stack_test.py       | 321                  |
 | lddt.py                   | 88                   |
-| <s>lddt_test.py</s>       | <s>65</s>            |
+| lddt_test.py              | 65                   |
 | mapping.py                | 209                  |
 | model.py                  | 163                  |
 | modules.py                | 2090                 |
 | prng.py                   | 55                   |
-| <s>prng_test.py</s>       | <s>32</s>            |
+| prng_test.py              | 32                   |
 | quat_affine.py            | 445                  |
-| <s>quat_affine_test.py</s> | <s>136</s>          |
+| quat_affine_test.py       | 136                  |
 | r3.py                     | 306                  |
 | utils.py                  | 119                  |
 
@@ -69,7 +68,7 @@ Here's my game plan:
 | rigid_matrix_vector.py             | 92                   |
 | rotation_matrix.py                 | 143                  |
 | struct_of_array.py                 | 206                  |
-| <s>test_utils.py</s>               | <s>84</s>            |
+| test_utils.py                      | 84                   |
 | utils.py                           | 9                    |
 | vector.py                          | 203                  |
 
@@ -78,9 +77,9 @@ Here's my game plan:
 | data_transforms.py           | 611                  |
 | input_pipeline.py            | 152                  |
 | protein_features.py          | 115                  |
-| <s>protein_features_test.py</s> | <s>40</s>         |
+| protein_features_test.py     | 40                   |
 | proteins_dataset.py          | 152                  |
 | shape_helpers.py             | 33                   |
-| <s>shape_helpers_test.py</s> | <s>28</s>            |
+| shape_helpers_test.py        | 28                   |
 | shape_placeholders.py        | 6                    |
 | utils.py                     | 33                   |
