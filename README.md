@@ -11,7 +11,9 @@ The official AlphaFold repository uses JAX, which graph-compiles code with XLA f
 
 ## Day 0
 
-Download the reduced dataset, which required 600 GB of disk space. Download `aria2` on Homebrew. Change all instances of `--parents` in the download scripts to `-p`.
+Download the reduced dataset, which required 600 GB\* of disk space. Download `aria2` on Homebrew. Change all instances of `--parents` in the download scripts to `-p`.
+
+> \*This comes in several modules of similar sizes. When you need some extra disk space, remove `uniclust30` which consumes ~90 GB. Later, re-run only the script that downloads this dataset. Freeing up this dataset provides the optimal combination of size freed, network download time, and impact on long-term SSD health.
  
 <img width="573" alt="Screen Shot 2022-10-02 at 12 48 13 AM" src="https://user-images.githubusercontent.com/71743241/193438359-27b09d85-85bb-450d-aef2-6ec025eee624.png">
 
