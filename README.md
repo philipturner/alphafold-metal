@@ -74,5 +74,6 @@ Here's my game plan:
 | protein_features.py          | 115                  |
 | proteins_dataset.py          | 152                  |
 | shape_helpers.py             | 33                   |
+| <s>shape_helpers_test.py</s> | <s>28</s>            |
 | shape_placeholders.py        | 6                    |
 | utils.py                     | 33                   |
