@@ -31,3 +31,8 @@ module  {
   }
 }
 ```
+
+Code to translate to Swift:
+
+| File in `alphafold/model` | Lines of Python Code |
+| ------------------------- | -------------------- |
