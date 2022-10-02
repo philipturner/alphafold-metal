@@ -37,6 +37,7 @@ module  {
 Here's my game plan:
 
 1) Get the Python code working on CPU-only JAX, comment out multimer code (I'll port that another day).
+2) Determine whether the AMX matrix accelerators were used (GPU will be 4x faster).
 3) Create a Swift package that calls into Python code, then execute the model in SwiftPM tests.
 4) Translate the code outlined below to Swift, verbatim.
 5) Replace calls into JAX and TensorFlow with MPSGraph.
