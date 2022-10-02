@@ -52,24 +52,14 @@ Here's my game plan:
 | layer_stack_test.py       | 321                | r3.py                     | 306                |
 | lddt.py                   | 88                 | utils.py                  | 119                |
 
-| File in `~/geometry` | Lines to Translate |
-| ---------------------------------- | -------------------- |
-| \_\_init\_\_.py                    | 17                   |
-| rigid_matrix_vector.py             | 92                   |
-| rotation_matrix.py                 | 143                  |
-| struct_of_array.py                 | 206                  |
-| test_utils.py                      | 84                   |
-| utils.py                           | 9                    |
-| vector.py                          | 203                  |
-
-| File in `~/tf` | Lines to Translate |
-| ---------------------------- | -------------------- |
-| data_transforms.py           | 611                  |
-| input_pipeline.py            | 152                  |
-| protein_features.py          | 115                  |
-| protein_features_test.py     | 40                   |
-| proteins_dataset.py          | 152                  |
-| shape_helpers.py             | 33                   |
-| shape_helpers_test.py        | 28                   |
-| shape_placeholders.py        | 6                    |
-| utils.py                     | 33                   |
+| File in `~/geometry`   | Lines to Translate | File in `~/tf`           | Lines to Translate |
+| ---------------------- | ------------------ | ------------------------ | ------------------ |
+| \_\_init\_\_.py        | 17                 | data_transforms.py       | 611                |
+| rigid_matrix_vector.py | 92                 | input_pipeline.py        | 152                |
+| rotation_matrix.py     | 143                | protein_features.py      | 115                |
+| struct_of_array.py     | 206                | protein_features_test.py | 40                 |
+| test_utils.py          | 84                 | proteins_dataset.py      | 152                |
+| utils.py               | 9                  | shape_helpers.py         | 33                 |
+| vector.py              | 203                | shape_helpers_test.py    | 28                 |
+|                        |                    | shape_placeholders.py    | 6                  |
+|                        |                    | utils.py                 | 33                 |
