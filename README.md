@@ -14,3 +14,5 @@ The official AlphaFold repository uses JAX, which graph-compiles code with XLA f
 Download the reduced dataset, which required 600 GB of disk space. Download `aria2` on Homebrew. Change all instances of `--parents` in the download scripts to `-p`.
  
 <img width="573" alt="Screen Shot 2022-10-02 at 12 48 13 AM" src="https://user-images.githubusercontent.com/71743241/193438359-27b09d85-85bb-450d-aef2-6ec025eee624.png">
+
+Remove `--info=progress2` in `download_pdf_mmcif.sh`.
