@@ -66,3 +66,5 @@ Here's my game plan:
 | vector.py              | 203                | shape_helpers_test.py    | 28                 |
 |                        |                    | shape_placeholders.py    | 6                  |
 |                        |                    | utils.py                 | 33                 |
+
+The `uniprot` dataset took several hours to download, so I couldn't make significant progress today.
