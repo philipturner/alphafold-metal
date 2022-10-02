@@ -32,7 +32,12 @@ module  {
 }
 ```
 
-I plan to get the Python code working on CPU-only JAX, translate it verbatim to Swift, then replace JAX and TensorFlow with MPSGraph. I'm skipping the tests and multimer code today. Code to translate:
+Here's my game plan:
+
+1) Get the Python code working on CPU-only JAX.
+2) Create a Swift package that calls into Python code, then execute the model in SwiftPM tests.
+3) Translate the code outlined below to Swift, verbatim.
+4) Replace calls into JAX and TensorFlow with MPSGraph.
 
 | File in `alphafold/model` | Lines of Python Code |
 | ------------------------- | -------------------- |
@@ -42,3 +47,7 @@ I plan to get the Python code working on CPU-only JAX, translate it verbatim to 
 | data.py                   | 19                   |
 | features.py               | 90                   |
 | folding.py                | 995                  |
+| layer_stack.py            | 274                  |
+| lddt.py                   | 88                   |
+| mapping.py                | 209                  |
+| model.py                  | 163                  |
