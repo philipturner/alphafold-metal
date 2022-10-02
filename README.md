@@ -8,3 +8,7 @@ The official AlphaFold repository uses JAX, which graph-compiles code with XLA f
 
 - Goal: Port the entire framework in a single day using PythonKit and MPSGraph, using https://github.com/lucidrains/alphafold2 as a reference.
 - Afterward, compare performance to the Colab notebook that uses an Nvidia K80. Prove it runs faster on my M1 Max, then ridiculously optimize it for inference performance.
+
+## Notes
+
+Download the reduced dataset, which required 600 GB of disk space. Download `aria2` on Homebrew. Change all instances of `--parents` in the download scripts to `-p`.
