@@ -43,18 +43,23 @@ Here's my game plan:
 | File in `alphafold/model` | Lines of Python Code |
 | ------------------------- | -------------------- |
 | all_atom.py               | 1127                 |
+| <s>all_atom_test.py</s>   | <s>121</s>           |
 | common_modules.py         | 116                  |
 | config.py                 | 643                  |
 | data.py                   | 19                   |
 | features.py               | 90                   |
 | folding.py                | 995                  |
 | layer_stack.py            | 274                  |
+| <s>layer_stack_test.py</s> | <s>321</s>          |
 | lddt.py                   | 88                   |
+| <s>lddt_test.py</s>       | <s>65</s>            |
 | mapping.py                | 209                  |
 | model.py                  | 163                  |
 | modules.py                | 2090                 |
 | prng.py                   | 55                   |
+| <s>prng_test.py</s>       | <s>32</s>            |
 | quat_affine.py            | 445                  |
+| <s>quat_affine_test.py</s> | <s>136</s>          |
 | r3.py                     | 306                  |
 | utils.py                  | 119                  |
 
