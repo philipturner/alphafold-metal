@@ -4,7 +4,7 @@ This fork ports AlphaFold to Swift using Metal Performance Shaders Graph. Althou
 
 The official AlphaFold repository uses JAX, which graph-compiles code with XLA for optimal performance on Nvidia GPUs. Here, I have optimized it for Apple GPUs so that I can use it on my MacBook Pro for nanotechnology research. These intense optimizations could greatly speedup my workflow - searching for proteins that may be used for transistors or memory cells. Such proteins have never been produced in living organisms, but genetically engineered bacteria can mass-produce them for real-world hardware. Since I don't know what the proteins will be, I need to rapidly search a vast solution space, with minimal latency and no restraints like Colab usage limits.
 
-- Goal: Port the entire framework in a few days using PythonKit and MPSGraph, using https://github.com/lucidrains/alphafold2 as a reference.
+- Goal: Port the entire framework in a few days using PythonKit and MPSGraph.
 - Afterward, compare performance to the Colab notebook that uses an Nvidia K80. Prove it runs faster on my M1 Max, then ridiculously optimize it for inference performance.
 
 ## Day 0
