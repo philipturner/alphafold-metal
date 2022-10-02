@@ -64,6 +64,7 @@ Here's my game plan:
 | rigid_matrix_vector.py             | 92                   |
 | rotation_matrix.py                 | 143                  |
 | struct_of_array.py                 | 206                  |
+| <s>test_utils.py</s>               | <s>84</s>            |
 | utils.py                           | 9                    |
 | vector.py                          | 203                  |
 
@@ -72,6 +73,7 @@ Here's my game plan:
 | data_transforms.py           | 611                  |
 | input_pipeline.py            | 152                  |
 | protein_features.py          | 115                  |
+| <s>protein_features_test.py</s> | <s>40</s>         |
 | proteins_dataset.py          | 152                  |
 | shape_helpers.py             | 33                   |
 | <s>shape_helpers_test.py</s> | <s>28</s>            |
