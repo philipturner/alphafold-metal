@@ -9,11 +9,13 @@ The official AlphaFold repository uses JAX, which graph-compiles code with XLA f
 - Goal: Port the entire framework in a single day using PythonKit and MPSGraph, using https://github.com/lucidrains/alphafold2 as a reference.
 - Afterward, compare performance to the Colab notebook that uses an Nvidia K80. Prove it runs faster on my M1 Max, then ridiculously optimize it for inference performance.
 
-## Notes
+## Day 0
 
 Download the reduced dataset, which required 600 GB of disk space. Download `aria2` on Homebrew. Change all instances of `--parents` in the download scripts to `-p`.
  
 <img width="573" alt="Screen Shot 2022-10-02 at 12 48 13 AM" src="https://user-images.githubusercontent.com/71743241/193438359-27b09d85-85bb-450d-aef2-6ec025eee624.png">
+
+## Day 1
 
 Remove `--info=progress2` in `download_pdf_mmcif.sh`. Instead, just put `--progress`; macOS uses an older `rsync` version that doesn't incrementally recurse files. The output shows the amount of files left, but it does flood the console. Downloaded Xcode 14.1 beta 3 because that has `argSort` and `inverse` functions for MPSGraph - functions that AlphaFold uses. I found a very useful hidden utility for debugging MPSGraphs:
 
