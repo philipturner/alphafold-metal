@@ -32,7 +32,13 @@ module  {
 }
 ```
 
-Code to translate to Swift:
+I'm skipping the tests and multimer code today. I plan to get the Python code working on CPU-only JAX, translate it verbatim to Swift, then replace JAX and TensorFlow with MPSGraph. Code to translate:
 
 | File in `alphafold/model` | Lines of Python Code |
 | ------------------------- | -------------------- |
+| all_atom.py               | 1127                 |
+| common_modules.py         | 116                  |
+| config.py                 | 643                  |
+| data.py                   | 19                   |
+| features.py               | 90                   |
+| folding.py                | 995                  |
