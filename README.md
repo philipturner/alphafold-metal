@@ -52,3 +52,7 @@ Here's my game plan:
 | mapping.py                | 209                  |
 | model.py                  | 163                  |
 | modules.py                | 2090                 |
+| prng.py                   | 55                   |
+| quat_affine.py            | 445                  |
+| r3.py                     | 306                  |
+| utils.py                  | 119                  |
