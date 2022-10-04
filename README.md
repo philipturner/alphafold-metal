@@ -71,6 +71,6 @@ The `uniprot` dataset took several hours to download, so I couldn't make signifi
 
 # Day 2
 
-I did not anticipate how problematic the hard drive consumption would be. Today, I had to remove the 100 GB `uniclust30` dataset just to free up room on my Mac, and anticipate needing the full 300 GB of free space soon. I don't think this effort to port AlphaFold is particularly worthwhile, because don't currently see a need to work with supermassive proteins. Perhaps I can buy an external HDD and tackle this effort a few months from now.
+I did not anticipate how problematic the hard drive consumption would be. Today, I had to remove the 100 GB `uniclust30` dataset just to free up room on my Mac, and anticipate needing the full 300 GB of free space soon. I don't think this effort to port AlphaFold is particularly worthwhile, because I don't currently see a need to work with supermassive proteins. Perhaps I can buy an external HDD and tackle this effort a few months from now.
 
 In the meantime, there's lots of work to do regarding hipSYCL and optimizing GROMACS for Apple silicon.
