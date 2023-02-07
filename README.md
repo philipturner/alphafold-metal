@@ -1,5 +1,7 @@
 # AlphaFold ported to the M1 GPU
 
+> Update: I should be able to accomplish this quite easily, using [LocalColabFold](https://github.com/YoshitakaMo/localcolabfold) to minimize disk space and [Peryton](https://github.com/jweinst1/Peryton) to automate most of the Python -> Swift translation process.
+
 This fork ports AlphaFold to Swift using Metal Performance Shaders Graph. Although it was [ported to PyTorch](https://github.com/lucidrains/alphafold2) (which uses MPSGraph internally), this fork can utilize MPSGraph's MLIR compilation capabilities. That greatly optimizes it compared to a purely eager implementation, especially since the model is extremely complex and time-recurrent. Furthermore, writing it in Swift provides full access the low-level Metal API. Metal permits more intense optimizations that aren't possible with the more user-friendly PyTorch tensors.
 
 The official AlphaFold repository uses JAX, which graph-compiles code with XLA for optimal performance on Nvidia GPUs. Here, I have optimized it for Apple GPUs so that I can use it on my MacBook Pro for nanotechnology research. These intense optimizations could greatly speedup my workflow - searching for proteins that may be used for transistors or memory cells. Such proteins have never been produced in living organisms, but genetically engineered bacteria can mass-produce them for real-world hardware. Since I don't know what the proteins will be, I need to rapidly search a vast solution space, with minimal latency and no restraints like Colab usage limits.
