@@ -1,6 +1,8 @@
 # AlphaFold ported to the M1 GPU
 
 > Update: I should be able to accomplish this quite easily, using [LocalColabFold](https://github.com/YoshitakaMo/localcolabfold) to minimize disk space and [Peryton](https://github.com/jweinst1/Peryton) to automate most of the Python -> Swift translation process.
+>
+> This port may be unnecessary since [OpenFold](https://github.com/aqlaboratory/openfold) uses PyTorch, and can run on macOS with minimial modification.
 
 This fork ports AlphaFold to Swift using Metal Performance Shaders Graph. Although it was [ported to PyTorch](https://github.com/lucidrains/alphafold2) (which uses MPSGraph internally), this fork can utilize MPSGraph's MLIR compilation capabilities. That greatly optimizes it compared to a purely eager implementation, especially since the model is extremely complex and time-recurrent. Furthermore, writing it in Swift provides full access the low-level Metal API. Metal permits more intense optimizations that aren't possible with the more user-friendly PyTorch tensors.
 
